@@ -1,147 +1,367 @@
 <!DOCTYPE html>
-<html lang="fa">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>شرکت مشاوره انرژی و آب</title>
-  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
-    body { font-family: 'Vazirmatn', Tahoma, sans-serif; }
-    .hero-section {
-      background: linear-gradient(rgba(0,38,77,0.6),rgba(0,38,77,0.6)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-      min-height: 10vh;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-top: 56px;
-    }
-    .logo {
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #0d6efd;
-      letter-spacing: 1px;
-    }
-    .service-img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 1rem 1rem 0 0;
-    }
-    /* استایل جدید برای کوچک کردن اسلاید شو */
-    #homeCarousel .carousel-item img {
-      height: 400px;
-      object-fit: cover;
-    }
-  </style>
-</head>
-<body>
-  <!-- هدر و منو -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-    <div class="container">
-      <span class="logo">EnergyConsult</span>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تغییر منو">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="/index.html">خانه</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">خدمات</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">پروژه‌ها</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">درباره ما</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">تماس با ما</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- هیرو -->
-  <section class="hero-section text-center">
-    <div class="container">
-      <h1 class="display-3 fw-bold mb-3">انرژی پایدار برای آینده‌ای روشن</h1>
-      <p class="lead mb-4">پیشرو در بهینه‌سازی مصرف انرژی و آب، نصب نیروگاه‌های تجدیدپذیر و خدمات مشاوره تخصصی</p>
-      <a href="services.html" class="btn btn-primary btn-lg">مشاهده خدمات</a>
-    </div>
-  </section>
-  <!-- معرفی کوتاه شرکت -->
-  <section class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="بهینه‌سازی انرژی و آب" class="img-fluid rounded shadow">
-      </div>
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-3">درباره شرکت</h2>
-        <p>شرکت ما با تکیه بر دانش فنی و تجربه، خدمات مشاوره‌ای، تست و راه‌اندازی در حوزه انرژی و آب را مطابق با استانداردهای روز ارائه می‌دهد. هدف ما ارتقاء بهره‌وری و توسعه پایدار است.</p>
-        <a href="about.html" class="btn btn-outline-primary mt-3">بیشتر بدانید</a>
-      </div>
-    </div>
-  </section>
-  <!-- خدمات اصلی -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-5">خدمات ما</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 text-center shadow-sm border-0">
-            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&q=80" class="service-img" alt="بهینه‌سازی انرژی">
-            <div class="card-body">
-              <div class="display-5 mb-2">⚡</div>
-              <h5 class="card-title">بهینه‌سازی مصرف انرژی</h5>
-              <p class="card-text">کاهش هزینه‌ها و افزایش بهره‌وری با راهکارهای نوین مدیریت انرژی.</p>
+
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>پارس انرژی پاک - مشاوره تخصصی انرژی و آب</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Vazirmatn", sans-serif;
+      }
+
+      :root {
+        --primary-color: #2e8b57;
+        --secondary-color: #4169e1;
+        --accent-color: #ffd700;
+        --text-dark: #2c3e50;
+        --text-light: #7f8c8d;
+        --bg-light: #f8f9fa;
+      }
+
+      body {
+        line-height: 1.7;
+        color: var(--text-dark);
+      }
+
+      .navbar {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .navbar.scrolled {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: white !important;
+      }
+
+      .nav-link {
+        color: white !important;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-link:hover {
+        color: var(--accent-color) !important;
+        transform: translateY(-2px);
+      }
+
+      .hero-section {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+        opacity: 0.3;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero-subtitle {
+        font-size: 1.3rem;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .btn-primary-custom {
+        background: linear-gradient(45deg, var(--accent-color), #ffa500);
+        border: none;
+        color: var(--text-dark);
+        font-weight: 600;
+        padding: 12px 30px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+      }
+
+      .btn-primary-custom:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        color: var(--text-dark);
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 3rem;
+        position: relative;
+        text-align: center;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(
+          45deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        border-radius: 2px;
+      }
+
+      .service-card {
+        background: white;
+        border-radius: 20px;
+        padding: 2.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        height: 100%;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .service-icon {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        display: block;
+      }
+
+      .service-card:nth-child(1) .service-icon {
+        color: #ffd700;
+      }
+      .service-card:nth-child(2) .service-icon {
+        color: #4169e1;
+      }
+      .service-card:nth-child(3) .service-icon {
+        color: #2e8b57;
+      }
+      .service-card:nth-child(4) .service-icon {
+        color: #ff6b35;
+      }
+
+      .service-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-dark);
+      }
+
+      .stats-section {
+        background: linear-gradient(135deg, var(--bg-light), #e8f5e8);
+        padding: 5rem 0;
+      }
+
+      .stat-item {
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .stat-number {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        display: block;
+      }
+
+      .stat-label {
+        font-size: 1.1rem;
+        color: var(--text-light);
+        margin-top: 0.5rem;
+      }
+
+      .contact-form {
+        background: white;
+        border-radius: 20px;
+        padding: 3rem;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-control,
+      .form-select {
+        border: 2px solid #e9ecef;
+        border-radius: 10px;
+        padding: 12px 15px;
+        transition: all 0.3s ease;
+      }
+
+      .form-control:focus,
+      .form-select:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 0.2rem rgba(46, 139, 87, 0.25);
+      }
+
+      .footer {
+        background: linear-gradient(135deg, var(--text-dark), #34495e);
+        color: white;
+        padding: 3rem 0 2rem;
+      }
+
+      .current-page {
+        display: block;
+      }
+
+      .page-content {
+        display: none;
+      }
+
+      .page-content.active {
+        display: block;
+      }
+
+      .fade-in {
+        animation: fadeIn 0.6s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .team-member {
+        text-align: center;
+        padding: 2rem;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .team-member:hover {
+        transform: translateY(-5px);
+      }
+
+      .team-avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: linear-gradient(
+          45deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        font-size: 3rem;
+        color: white;
+      }
+
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2.5rem;
+        }
+        .hero-subtitle {
+          font-size: 1.1rem;
+        }
+        .section-title {
+          font-size: 2rem;
+        }
+        .service-card {
+          padding: 2rem;
+        }
+        .contact-form {
+          padding: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <!-- Services Page -->
+    <div id="services-page" style="padding-top: 100px">
+      <div class="container py-5">
+        <h1 class="section-title">طلای ناب ماندگار</h1>
+        <div class="row g-5 mb-5">
+          <div class="col-lg-6">
+            <div class="service-card">
+              <div class="d-flex align-items-center mb-3">
+                <i
+                  class="fas fa-bolt service-icon me-3"
+                  style="color: #ffd700"
+                ></i>
+                <h2 class="service-title mb-0"‍><a href="site1/index.html">site1</a></h2>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-card">
+              <div class="d-flex align-items-center mb-3">
+                <i
+                  class="fas fa-tint service-icon me-3"
+                  style="color: #4169e1"
+                ></i>
+                <h2 class="service-title mb-0"‍><a href="site2/index.html">site2</a></h2>
+              </div>
+              
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 text-center shadow-sm border-0">
-            <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=400&q=80" class="service-img" alt="بهینه‌سازی آب">
-            <div class="card-body">
-              <div class="display-5 mb-2">💧</div>
-              <h5 class="card-title">بهینه‌سازی مصرف آب</h5>
-              <p class="card-text">ارائه راهکارهای کاهش مصرف و بازیافت آب در صنایع و ساختمان‌ها.</p>
-            </div>
-          </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 text-center shadow-sm border-0">
-            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="service-img" alt="نیروگاه تجدیدپذیر">
-            <div class="card-body">
-              <div class="display-5 mb-2">🔋</div>
-              <h5 class="card-title">نصب و راه‌اندازی نیروگاه‌های تجدیدپذیر</h5>
-              <p class="card-text">طراحی، نصب و راه‌اندازی نیروگاه‌های خورشیدی و بادی با جدیدترین فناوری‌ها.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 text-center shadow-sm border-0">
-            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="service-img" alt="مشاوره و تست استاندارد">
-            <div class="card-body">
-              <div class="display-5 mb-2">📋</div>
-              <h5 class="card-title">مشاوره و تست راه‌اندازی بر اساس استاندارد</h5>
-              <p class="card-text">ارائه خدمات مشاوره، تست و راه‌اندازی مطابق با استانداردهای ملی و بین‌المللی.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <a href="services.html" class="btn btn-outline-primary">جزئیات خدمات</a>
       </div>
     </div>
-  </section>
-  <!-- تماس سریع و فوتر -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <div class="container">
-      <div class="mb-2">
-        <span class="fw-bold">تلفن:</span> 021-12345678 &nbsp; | &nbsp;
-        <span class="fw-bold">ایمیل:</span> info@energyconsult.com
-      </div>
-      <div>
-        <span>© 2024 شرکت مشاوره انرژی و آب</span>
-      </div>
-    </div>
-  </footer>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  </body>
 </html>
