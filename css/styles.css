@@ -1,0 +1,54 @@
+/* استایل سفارشی سایت */
+body {
+  font-family: 'Vazirmatn', 'IRANSans', Tahoma, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 70vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-section .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 38, 77, 0.55);
+  z-index: 1;
+}
+
+.navbar {
+  font-size: 1.1rem;
+}
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+}
+
+.card {
+  border-radius: 1rem;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 0 24px 0 rgba(0,0,0,0.10);
+}
+
+footer {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 40vh;
+    padding: 2rem 0;
+  }
+  .navbar .navbar-brand {
+    font-size: 1.1rem;
+  }
+}
